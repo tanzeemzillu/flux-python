@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: sourceip
-          image: 'tanzeemzillu/sourceip:1.0.0'
+          image: 'tanzeemzillu/sourceip:1.0.1'
           resources:
             requests:
               cpu: '0.1'
