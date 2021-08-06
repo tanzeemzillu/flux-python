@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sourceip
+spec:
+  selector:
+    matchLabels:
+      app: sourceip
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: sourceip
+    spec:
+      containers:
+        - name: sourceip
+          image: 'tanzeemzillu/sourceip:1.0.0'
+          resources:
+            requests:
+              cpu: '0.1'
+              memory: 60M
+            limits:
+              cpu: '0.1'
+              memory: 75M
